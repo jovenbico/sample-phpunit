@@ -1,0 +1,7 @@
+.project
+.buildpath
+.gitattributes
+.settings/
+vendor/
+
+composer.lock
