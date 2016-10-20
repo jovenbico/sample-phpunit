@@ -4,6 +4,7 @@ namespace Service;
 
 use Domain\Employee;
 use Domain\Manager;
+use Domain\Person;
 
 class UserService {
 
@@ -14,8 +15,11 @@ class UserService {
 		$emp = new Employee ();
 		$mang = new Manager ();
 
-		$emp->say ();
-		$mang->say ();
+		if ($emp instanceof Person)
+			$emp->say ();
+
+		if ($mang instanceof Person)
+			$mang->say ();
 
 	}
 
